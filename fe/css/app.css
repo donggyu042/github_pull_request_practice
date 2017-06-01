@@ -1,8 +1,63 @@
-/*
 
-app-template.css overrides
+.date {
+    position: absolute;
+    font-size: 10px;
+    top: 40px;
+    left: 60px;
+    color: #999999;
+}
 
-remove this comment if used
-remove this file if not
+#show-detail {
+    position: absolute;
+    font-size: 10px;
+    top: 40px;
+    left: 460px;
+    color: #999999;
+}
 
-*/
+#show-detail:hover {
+    cursor: pointer;
+}
+
+.todo-list li.completed span.date {
+    color: #d9d9d9;
+}
+
+.id-container {
+    display: none;
+}
+
+.check-list {
+    color: red;
+    cursor: pointer;
+}
+
+.check-list:hover {
+    text-decoration: underline;
+}
+
+#todo-detail {
+    background: rgb(180, 180, 180);
+    width: 400px;
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#arrow {
+    position: absolute;
+    border-color: transparent transparent rgb(180, 180, 180) transparent;
+    border-width: 10px;
+    border-style: solid;
+    top: -20px;
+    left: 4px;
+}
+
+.todo-detail-container {
+    padding: 0 30px 30px;
+}
+
+.todo-detail-content {
+    margin-top: 10px;
+}
+
