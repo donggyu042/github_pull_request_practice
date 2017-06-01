@@ -43,7 +43,7 @@ body {
 
 .todoapp {
 	background: #fff;
-	margin: 130px 0 40px 0;
+	margin: 150px 0 40px 0;
 	position: relative;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
 	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
@@ -74,7 +74,7 @@ body {
 	font-size: 100px;
 	font-weight: 100;
 	text-align: center;
-	color: rgba(175, 47, 47, 0.15);
+	color: rgba(175, 47, 47, 0.45);
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
@@ -174,14 +174,13 @@ body {
 }
 
 .todo-list li .toggle {
-	text-align: center;
 	width: 40px;
 	/* auto, since non-WebKit browsers doesn't support input styling */
 	height: auto;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	margin: auto 0;
+	margin-top: 10px;
 	border: none; /* Mobile Safari */
 	-webkit-appearance: none;
 	appearance: none;
@@ -206,11 +205,14 @@ body {
 }
 
 .todo-list li label {
-	word-break: break-all;
 	padding: 15px 15px 15px 60px;
 	display: block;
 	line-height: 1.2;
 	transition: color 0.4s;
+	white-space: nowrap;
+    width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .todo-list li.completed label {
@@ -226,10 +228,9 @@ body {
 	bottom: 0;
 	width: 40px;
 	height: 40px;
-	margin: auto 0;
+	margin-top: 10px;
 	font-size: 30px;
 	color: #cc9a9a;
-	margin-bottom: 11px;
 	transition: color 0.2s ease-out;
 }
 
@@ -329,8 +330,8 @@ html .clear-completed:active {
 }
 
 .info {
-	margin: 65px auto 0;
-	color: #bfbfbf;
+	margin: 80px auto 120px;
+	color: #555555;
 	font-size: 10px;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 	text-align: center;
